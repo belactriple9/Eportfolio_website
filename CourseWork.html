@@ -3,14 +3,78 @@
 
 <head>
     <!-- Javascript here -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $("body").bind('resize', (e) => //this is callback function when resize happens
+        {
+            //stop the page from reloading
+            e.preventDefault();
+            //then we can decide to show the hamburger menu or not. and fix any formatting on resize
+
+            //todo
+        })
+    </script>
 </head>
 
 <body>
 
+    <div id="menu_expanded">
+        <div id="content">
+            <text id="header_text">
+                <a href="/index.html">About Me</a>
+                <!--This is index.html-->
+            </text>
+            <text id="header_text">
+                <a href="/CourseWork.html">Course Work</a>
+            </text>
+            <text id="header_text">
+                <a href="/Experience.html">Experience</a>
+            </text>
+            <text id="header_text">
+                <a href="/Projects.html">Projects</a>
+            </text>
+            <text id="header_text">
+                <a href="https://google.com">Resume</a> <!-- should this just link to a hosted pdf? -->
+            </text>
+        </div>
+    </div>
+    <!--do we need a hamburger menu?-->
 </body>
 
 <style>
+    #content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex: 1;
+        font-family: 'Special Elite', cursive;
+        flex-direction: row;
+    }
 
+    #menu_expanded {
+        height: 40px;
+        width: 100%;
+        display: flex;
+
+        background-image: linear-gradient(to right, rgba(13, 24, 42), rgba(8, 12, 21), rgba(28, 19, 38));
+    }
+
+    #header_text {
+        width: 100;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:link {
+        color: white;
+    }
 </style>
 
 </html>
