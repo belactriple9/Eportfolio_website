@@ -42,9 +42,45 @@
         </div>
     </div>
     <!--do we need a hamburger menu?-->
+    <div id="holder_holder">
+        <div id="holder">
+            <div id="coursework_header">
+                <h1>Experience</h1>
+            </div>
+            <div class="percent_bar"></div>
+        </div>
+    </div>
+
 </body>
 
 <style>
+    .percent_bar {
+        border-top: 2px solid black;
+        height: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        padding-bottom: 10px;
+    }
+
+    #holder_holder {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #holder {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+
     #content {
         display: flex;
         align-items: center;
