@@ -14,6 +14,8 @@
             //todo
         })
     </script>
+    <!-- Other stuff here -->
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,27 +23,203 @@
     <div id="menu_expanded">
         <div id="content">
             <text id="header_text">
-                <a href="/index.html">About Me</a>
+                <a class="header_links" href="/index.html">About Me</a>
                 <!--This is index.html-->
             </text>
             <text id="header_text">
-                <a href="/CourseWork.html">Course Work</a>
+                <a class="header_links" href="/CourseWork.html">Course Work</a>
             </text>
             <text id="header_text">
-                <a href="/Experience.html">Experience</a>
+                <a class="header_links" href="/Experience.html">Experience</a>
             </text>
             <text id="header_text">
-                <a href="/Projects.html">Projects</a>
+                <a class="header_links" href="/Projects.html">Projects</a>
             </text>
             <text id="header_text">
-                <a href="/Resume.html">Resume</a> <!-- should this just link to a hosted pdf? -->
+                <a class="header_links" href="/Resume.html">Resume</a> <!-- should this just link to a hosted pdf? -->
             </text>
         </div>
     </div>
     <!--do we need a hamburger menu?-->
+
+    <div id="pic_and_link">
+        <div id="pic">
+            <img class="circle" src="/Caleb.jpg">
+        </div>
+        <div id="links">
+            <div id="links_top">
+                <br>
+                <h1><b>Caleb Rippey</b></h1>
+                <h3> <b>Major: </b>BS Software Engineering & Cyber Security</h3>
+                <h3><b>Graduation: </b>Spring 2022</h3>
+            </div>
+            <div id="links_bottom">
+                <div id="links_bottom_left">
+                    <h3><b>Connect with me</b></h3>
+                    <!--Images instead of hyperlinks?-->
+                    <div id="personal_links">
+                        <a class="personal_links" href="https://www.linkedin.com/in/calebr/">🔗 Linkedin </a> <br>
+                        <a class="personal_links" href="https://github.com/belactriple9">🧾 Github </a> <br>
+                        <a class="personal_links" href="mailto:carippey1@gmail.com">📩 Email </a> <br>
+                    </div>
+                </div>
+                <div class="vl">
+                    <!--nothing but a vertical line-->
+                </div>
+                <div id="links_bottom_right">
+                    <h3>
+                        My Interests
+                    </h3>
+                    <ul id="interests">
+                        <li>Software development</li>
+                        <li>Coin collecting</li>
+                        <li>Chemistry</li>
+                        <li>Cryptocurrencies</li>
+                        <li>Tinkering</li>
+                        <li>Hikes</li>
+                        <li style="color:rgb(220, 220, 220)">Easter eggs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="shading_div">
+        <!--nothing here just to look fancy-->
+    </div>
+    <div id="split_about_me">
+        <div id="left_about_me">
+            <h1>Professional Achievements</h1>
+
+            <h2>The Hive management Software</h2>
+            <h3>An iOS/Android/Web app built in react native for a beekeper</h3>
+            <hr>
+            <h2>Harvey Knowledge Center Manager</h2>
+            <h3>A web UI built with a RESTful API to interact security with a database of employees and to help schedule
+                meetups with candidates</h3>
+            <hr>
+        </div>
+        <div id="right_about_me">
+            <h1>About Me</h1>
+            <br>
+            <p>
+            <h4>
+                Hello, and thank you for visiting my ePortfolio.
+                <br><br>
+                I'm currently a senior majoring in software engineering and cybersecurity at Radford University. I’ve
+                been interested in computers since I was a kid, though I never envisioned myself working with them.
+                I remember always messing around with them whenever I got the chance to. This lead to more interest and
+                learning new tricks with them. Today, I’m working on or with
+                computers almost daily and it’s exactly what I want to do. Over my college days, some of the biggest
+                projects I have worked on
+                required software development on a team. This allowed for training to work on and develop an
+                app/website/server for a client. Though I wasn’t
+                always the leader, we were able to easily break up work as we needed and develop on-time and
+                high-quality software. Though none of this software is really in use today, it was great to see the
+                clients' excitement at the final product ready to be deployed.
+                <br><br>
+                Some other interests and hobbies include Cryptocurrencies and coin collecting. Coin collecting is good
+                because it helps with organizational skills. It's also fun to find new treasures and collect coins
+                you've never seen before or will maybe only ever see once. Cryptocurrencies may be a hot investment
+                topic but the technologies behind them and trustless technology are what's impressive to me. There
+                are mathematical technologies that seem inconceivable with zero-knowledge proofs and cryptography
+                concepts
+                in general but are great to learn and keep up with the times. Nobody knows where these interesting
+                assets will end up in day-to-day life in the future. Cryptocurrencies have also led the way for
+                my first job, a tech support job. This involved helping users on the platform and investigating cases
+                that required a little bit more than a fabricated response. This job has taught me interpersonal skills
+                and has allowed me to get some experience before moving on to something greater.
+            </h4>
+            </p>
+        </div>
+    </div>
 </body>
 
 <style>
+    #right_about_me {
+        color: rgba(28, 19, 38);
+        width: 50%;
+        padding: 10px;
+    }
+
+    #left_about_me {
+        color: rgba(28, 19, 38);
+        width: 20%;
+        padding: 10px;
+        padding-left: 30px;
+    }
+
+    #split_about_me {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+    }
+
+    #shading_div {
+        height: 10px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgb(200, 200, 200), white);
+    }
+
+    .vl {
+        height: 80%;
+        width: 0%;
+        border: black solid 1px;
+
+    }
+
+    #links_bottom_right {
+        width: 50%;
+        height: 100%;
+        padding-left: 20px;
+        /* border: 1px orange solid; */
+    }
+
+    #links_bottom_left {
+        width: 50%;
+        height: 100%;
+        /* border: 1px red solid; */
+    }
+
+    #links_bottom {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #links_top {
+        height: 50%;
+        width: 100%;
+        /* border: green 2px dotted; */
+    }
+
+    #pic {
+        height: 100%;
+        width: 220px;
+
+    }
+
+    #links {
+        width: 100%;
+        flex-direction: column;
+        padding-left: 10px;
+        /* border: orange solid 1px; */
+    }
+
+    #pic_and_link {
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        width: auto;
+        background-image: linear-gradient(to bottom, rgb(70, 130, 180) 50%, rgb(220, 220, 220) 50%);
+
+    }
+
     #content {
         display: flex;
         align-items: center;
@@ -68,12 +246,42 @@
         margin: 0;
     }
 
-    a:visited {
+    .header_links:visited {
         color: white;
     }
 
-    a:link {
+    .header_links:link {
         color: white;
+    }
+
+
+    .personal_links:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    .personal_links:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    .personal_links:hover {
+        color: lightslategray;
+        text-decoration: none;
+    }
+
+
+    .circle {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        border-radius: 50%;
+        padding-left: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -o-border-radius: 50%;
     }
 </style>
 
