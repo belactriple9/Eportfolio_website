@@ -42,9 +42,77 @@
         </div>
     </div>
     <!--do we need a hamburger menu?-->
+
+    <div id="holder">
+        <div id="coursework_header">
+            <h1>Projects</h1>
+        </div>
+        <div class="percent_bar"></div>
+        <div id="desc">
+            Here are some of my projects that I've worked on.
+            <br>
+            From left to right, top to bottom, I have a React native to do list component that I modified and ended up
+            using for a class project for software engineering. The next project is a way to view limit orders for
+            specific pairs on https://1inch.io. This shows knowledge of calling an API and working with the data
+            returned from it. Following the 1inch.io theme, a simple dashboard on how much $1INCH
+            token's price has gone up since the day it was deployed. Lastly, there's a simple webpage built to assist
+            people in claiming a gas refund campaign, showing knowledge of at least the basics of web3 and simple
+            contract interactions. The final project I'd like to display is a nodeJS REST server to push and pull from a
+            database, this I can't share due to university copyright.
+        </div>
+        <br>
+        <div id="project_table">
+            <iframe src="https://snack.expo.dev/@carippey/vengeful-pretzels">
+            </iframe>
+            <iframe src="https://belactriple9.github.io/1inch-pairs/">
+            </iframe>
+            <iframe src="https://belactriple9.github.io/1inch-daily/">
+            </iframe>
+            <iframe src="https://belactriple9.github.io/1inch-gas-refund-claim/">
+            </iframe>
+        </div>
 </body>
 
 <style>
+    iframe {
+        width: 49.6%;
+        height: 500px;
+    }
+
+    #project_table {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    #desc {
+        width: 70%;
+        font-size: 14pt;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .percent_bar {
+        border-top: 2px solid black;
+        height: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        padding-bottom: 10px;
+    }
+
+
+    #holder {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
     #content {
         display: flex;
         align-items: center;
